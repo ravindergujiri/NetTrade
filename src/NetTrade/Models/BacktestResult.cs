@@ -1,10 +1,13 @@
 ﻿using NetTrade.Abstractions.Interfaces;
 using System;
+using System.Collections.Generic;
 
 namespace NetTrade.Models
 {
     public class BacktestResult : IBacktestResult
     {
+        public List<ITrade> Trades { get; set; }
+
         public long TotalTradesNumber { get; set; }
 
         public long LongTradesNumber { get; set; }

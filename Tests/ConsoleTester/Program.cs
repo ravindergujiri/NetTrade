@@ -79,7 +79,7 @@ namespace ConsoleTester
             var robotParmeters = new RobotParameters
             {
                 Account = new BacktestAccount(1, 1, string.Empty, 500, "ConsoleTester"),
-                Backtester = new OhlcBacktester { Interval = TimeSpan.FromHours(1) },
+                Backtester = new OhlcBacktester { Interval = TimeSpan.FromDays(1) },
                 BacktestSettings = new BacktestSettings(startTime, endTime),
                 Mode = Mode.Backtest,
                 Server = new Server(),

@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace NetTrade.Abstractions.Interfaces
 {
     public interface IBacktestResult
     {
+        List<ITrade> Trades { get; set; }
+
         long TotalTradesNumber { get; }
 
         long LongTradesNumber { get; }

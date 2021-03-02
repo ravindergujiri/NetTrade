@@ -54,6 +54,7 @@ namespace NetTrade.Abstractions
 
             var result = new BacktestResult
             {
+                Trades = trades,
                 TotalTradesNumber = trades.Count,
                 LongTradesNumber = trades.Where(iTrade => iTrade.Order.TradeType == TradeType.Buy).Count(),
                 ShortTradesNumber = trades.Where(iTrade => iTrade.Order.TradeType == TradeType.Sell).Count(),
